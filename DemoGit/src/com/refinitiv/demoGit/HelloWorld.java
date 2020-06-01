@@ -18,7 +18,7 @@ public void init() throws ServletException {
 public String getName() throws FileNotFoundException, IOException {
    Properties props = new Properties();
    props.load(getServletContext().getResourceAsStream("/resources/demogit.properties"));
-   return (props.getProperty("name"));	
+   return (WorkWithName.getName(props));	
 }
 
 public void doGet(HttpServletRequest request, HttpServletResponse response)
