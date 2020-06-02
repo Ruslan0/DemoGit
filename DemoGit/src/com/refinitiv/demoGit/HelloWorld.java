@@ -28,7 +28,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
    response.setContentType("text/html");
 
    PrintWriter out = response.getWriter();
-   out.println("<h1>" + message + getName()+"</h1>");
+   out.println("<h1>" + message + getName()+"!"+"</h1>");
 }
 
 public void destroy() {
